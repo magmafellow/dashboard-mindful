@@ -39,7 +39,7 @@ export async function fetchLatestInvoices() {
 
   try {
     // me
-    console.log('LatestInvoices() called')
+    // console.log('LatestInvoices() called')
     
     const data = await sql<LatestInvoiceRaw>`
       SELECT invoices.amount, customers.name, customers.image_url, customers.email, invoices.id
